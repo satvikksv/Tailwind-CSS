@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>tailwind webpage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-red-200">
+    <!--background-color and width,height -->
+    <div class="bg-yellow-200 w-32 h-32">hello dude</div>
+    <div class="bg-yellow-800 w-1/2">hello dude</div>
+    <div class="bg-blue-500 w-1/12">hello dude</div>
+    <div class="bg-blue-700 w-3/12">hello dude</div>
+    <!--challenge-->
+    <div>
+        <h1>challenge-1 > shades of blue</h1>
+        <div class="bg-blue-100 w-5 h-6">text</div>
+        <div class="bg-blue-200 w-5 h-6">text</div>
+        <div class="bg-blue-300 w-5 h-6">text</div>
+        <div class="bg-blue-400 w-5 h-6">text</div>
+        <div class="bg-blue-500 w-5 h-6">text</div>
+        <div class="bg-blue-600 w-5 h-6">text</div>
+        <div class="bg-blue-700 w-5 h-6">text</div>
+        <div class="bg-blue-800 w-5 h-6">text</div>
+        <div class="bg-blue-900 w-5 h-6">text</div>
+    </div>
+
+    <!--margins and padding-->
+    <div>
+      <div class="bg-blue-500 w-32 h-32 mb-4 p-4">text</div>
+      <div class="bg-blue-800 w-32 h-32 mt-4 p-4">text</div>
+      <div class="bg-red-700 w-32 h-32 mt-4 px-4 py-4">text text text text text text text</div>
+   </div>
+   <div class="styling-text-part1">
+      <!--styling-text - font family-->
+      <div>
+          <div class="font-mono">some text</div>
+      </div>
+      <!--styling-text - text size-->
+      <div>
+          <div class="text-4xl">some text</div>
+      </div>
+      <!--styling-text - text alignment-->
+      <div>
+         <div class="text-4xl text-center">some text</div>
+      </div>
+      <!--styling-text - text color-->
+      <div>
+         <div class="text-4xl text-center text-blue-500 bg-blue-900">some text</div>
+      </div>
+    </div>
+    <div class="styling-text-part2">
+        <!--italic and non-italic-->
+        <div>
+          <div class="italic">aihshqhsduiqddsdhishdh<span class="non-italic">asdohshohoashd</span>ohosahdoih</div>
+       </div>
+       <!--font weight-->
+       <div>
+           <div class="font-black">hello world</div>
+       </div>
+       <!--letter spacing and line-height-->
+       <div>
+          <div class="tracking-tight">hello world, what's up, how it is going there?</div>
+          <div class="leading-loose">hello world, what's up, how it is going there?,<br> hello world, what's up, how it is going there?,hello world,<br>what's up, how it is going there?</div>
+       </div> 
+       <!--text-decorations--
+        .underline, .no-underline, .line-through-->
+       <div>
+           <div class="underline">hi vinnu</div>
+       </div>
+         <!--Text-Transform-->
+         <div>
+             <div class="uppercase">hello vinnu, what are you doing? </div>
+             <p>And other classes are ".lowercase, .capitalize, .normal-case"</p>
+         </div>
+    </div>
+    <!--CHALLENGE-2-->
+    <!--task->1 Title casing heading 1 text in dark gray-->
+    <h1 class="text-gray-900 capitalize text-xl">some text which has no meaning</h1>
+    <hr class="bg-red-900">
+    <!--task->2 paragraph styling with 1.5 line-height & letter spacing-->
+    <p class="leading-normal tracking-normal">
+        some text which has no meaning,  some text which has no meaning,<br>
+        some text which has no meaning,  some text which has no meaning<br>
+        some text which has no meaning,  some text which has no meaning.
+    </p>
+    <!--task->3 Treated like a quote with a background and plenty of padding. Italic title-->
+    <p class="bg-blue-900 p-10 w-64 m-4">
+        some text which has no meaning,some text which has no meaning,<br>
+        some text which has no meaning,some text which has no meaning<br>
+        some text which has no meaning,some text which has no meaning.
+    </p>
+    <p class="ml-32"> - Lionel Messi, <span class="italic">Footballer</span></p>
+    <!--task->4 call to action button, blue with good padding and uppercase-->
+    <button class="uppercase bg-blue-500 text-white px-4 py-3">Enroll Now</button>
+    
+    
+    <!--BORDERS-->
+    <div>
+        <div class="w-40 h-40 bg-yellow-500 text-black border-8 px-4 py-4">hello vinnu</div>
+        <div class="w-40 h-40 bg-yellow-500 m-4 text-black border-r-8 border-blue-500 px-4 py-4">hello vinnu</div>
+        <div class="w-40 h-40 bg-yellow-500 m-4 text-black border-8 border-dotted border-blue-500 px-4 py-4">hello vinnu</div>
+        <div class="w-40 h-40 bg-yellow-500 m-4 text-black border-8 border-blue-500 px-4 py-4 rounded-lg">hello vinnu</div>
+        <div class="w-40 h-40 bg-yellow-500 m-4 text-black border-4 border-blue-500 rounded-tr-full px-4 py-4">hello vinnu</div>
+    </div>
+
+    <!--Buttons challenge-->
+    <div>
+        <!--blue background, rounded, thick left border-->
+        <div><button class="bg-blue-800 border-2 border-red-600 text-white px-4 m-2 rounded-lg border-l-8 ">Submit</button></div>
+
+        <!--red text, outlined-->
+        <div><button class="border-4 text-red-600 border-red-600 px-4 m-2">Cancel</button></div>
+
+        <!--light indigo background, bottom border, indigo text-->
+        <div><button class="bg-indigo-300 border-b-4 border-blue-900 px-4 m-2 font-indigo">Save</button></div>
+
+        <!--thick rounded, lots of padding, large button-->
+        <div><button class=" px-10 py-4 m-2 border-4 rounded-lg bg-green-800 text-white">Buy Now</button></div>
+
+        <!--otlined, serif font, uppercase, rounded-->
+        <div><button class="px-6 py-2 font-serif uppercase border-4 rounded-lg bg-purple-500">Send Postcard</button></div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
